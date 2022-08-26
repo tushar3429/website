@@ -1,71 +1,447 @@
-.div1 {
-    display: inline-block;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: inline;
+    
 }
 
-.header {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 30px;
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+   
+   width:  150px; 
+   position:absolute;
+   left: 10px; 
+   top: 8px;
+
+    
+}
+nav links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav-links ul li {
+    list-style: none;
     display: inline-block;
-    margin-top: 20px;
+    padding: 8px 12px;
+    position: relative;
+    top: 1px;
+}
+
+.nav-links ul li a {
+    color: black;
     cursor: pointer;
-    margin-right: 300px;
+    text-decoration: none;
+    font-size: 14px;
+    top: 1px;
+    position: relative;
+    font-weight: bold;
+    padding-top: 0;
 }
 
-.gfx {
-    color :red;
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff1100;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
-.nav1 {
-    display: inline-block;
-    padding:10px 10%;
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+
+.nav-links {
+    top: 18px;
+    left: 1100px;
+    position: absolute;
+}
+
+.spn {
+    display: inline;
+    color: red;
+}
+
+.title {
+  position: relative;
+  
+
+
+}
+.title1 {
+    font-size: 50px;
+    font-family:  'Poppins', sans-serif;
+    position: relative;
+    display: inline;
+    left: 650px;
+    top: 220px;
    
 }
-.nav {
-    color:rgba(0, 0, 0, 0.594);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 550;
-    text-decoration: none;
-    letter-spacing: 3px;
-    word-wrap: wrap;
-    word-spacing: 10px;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 40px;
-    transition: 0.3s;
 
-}
-
-.nav:hover {
-    color: red;
+.naruto {
+    display: block;
+    position: absolute;
     
 }
 
- 
-
-
-.header-logo {
-    display: inline-block;
-}
-.logo {
-    height: 30px;
-    border-radius: 50px;
-    display: inline;
-    position: relative;
+.naruto1 {
+    top: 400px;
+    height: 300px;
+    padding-left: 300px;
     cursor: pointer;
-    
 }
-.text {
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+
+.about {
+    position: relative;
+}
+
+.about-me {
+    position: relative;
+    display: inline;
+    top: 220px;
+    left: 650px;
+    color: #464853;
+    cursor: pointer;
+}
+
+.loc {
+    position: absolute;
+    display: block;
+}
+.loc1 {
+    padding-left: 650px;
+    padding-top: 180px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.place {
+    position: relative;
+}
+
+.place1 {
+    position: relative;
+    display: inline;
+    color:#464853;
+    left:700px;
+    top: 236px;
+    word-spacing: 5px;
+    cursor: pointer;
+}
+
+.mail{
+    position: absolute;
+    display: block;
+}
+
+.mail1 {
+    height: 40px;
+    padding-left: 650px;
+    padding-top: 240px;
+    cursor: pointer;
+}
+
+.id {
+    position: relative;
+}
+
+.id1 {
+    position: relative;
+    display: inline;
+    color:#464853;
+    word-spacing: 5px;
+    left: 700px;
+    top: 273px;
+    cursor: pointer;
+}
+
+.p2 {
+position: relative;
+}
+
+.p2txt {
+    position: relative;
+    display: inline;
+    font-size: 40px;
     text-align: center;
-    padding-top: 280px;
-    padding-left:400px;
-    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    left: 440px;
+    top: 300px;
+    cursor: pointer;
+}
+
+.pro {
+    color: #ff1100;
+}
+
+.insta {
+    position: relative;
+}
+
+.insta1 {
+    position: relative;
+    display: inline;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    left: 440px;
+    top: 300px;
+    cursor: pointer;
+}
+
+.sm {
+    color: red;
 }
 
 
+.dp1 {
+    position: absolute;
+    display: block;
 
+}
+
+.dp {
+    padding-left: 670px;
+    padding-top: 320px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.sharma1 {
+    position: relative;
+}
+
+.sharma {
+    position: relative;
+    display: inline;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #464853;
+    left: 710px;
+    top: 350px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer{
+	background-color: #d7e0e170;
+    margin-top: 170px;
+   height: 65px;
+   width: 1600px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+
+
+.st {
+    position: relative;
+}
+
+.st1 {
+    position: relative;
+    display: inline;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #464853;
+    left: 710px;
+    top: 220px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+    .header{
+        min-height: 100vh;
+        width: 100%;
+        background-color: white;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        display: inline;
+        
+    }
+    .logo {
+        width:  90px; 
+   position:absolute;
+   left: 10px; 
+   top: 9px;
+    }
+  }
+
+ @media only screen and (max-width: 640px) {
+    .naruto {
+        display: block;
+        position: absolute;
+        
+    }
+    .naruto1 {
+        
+        margin-left: 35px;
+        margin-bottom: 70px;
+        padding-top: 4px;
+        height: 250px;
+        padding-left: 30px;
+        cursor: pointer;
+    }
+    .title {
+        position: relative;
+        
+      
+      
+      }
+      .title1 {
+          font-size: 22px;
+          font-family:  'Poppins', sans-serif;
+          position: relative;
+          display: inline;
+          left: 60px;
+          top: 420px;
+          
+         
+      }
+
+      .nav-links {
+        flex: 1;
+    text-align: right;
+      }
+      .nav-links {
+        top: 1px;
+        left: 100px;
+        position: absolute;  
+ } 
+ .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 4px 6px;
+    position: relative;
+    top: 1px;
+}
+
+.nav-links ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 7px;
+    top: 1px;
+    position: relative;
+    font-weight: bold;
+    padding-top: 0;
+    left: 100px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ff1100;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.about {
+    position: relative;
+}
+
+.about-me {
+    position: relative;
+    display: inline-block;
+    top: 430px;
+    left: 38px;
+    color: #464853;
+    cursor: pointer;
+}
+.loc {
+    position: absolute;
+    display: block;
+}
+.loc1 {
+    padding-left: 100px;
+    padding-top: 385px;
+    height: 30px;
+    cursor: pointer;
+}
+.place {
+    position: relative;
+}
+
+.place1 {
+    position: relative;
+    display: inline-block;
+    color:#464853;
+    left:130px;
+    top: 435px;
+    word-spacing: 5px;
+    cursor: pointer;
+}
+
+.mail{
+    position: absolute;
+    display: block;
+}
+
+.mail1 {
+    height: 40px;
+    padding-left: 95px;
+    padding-top: 420px;
+    cursor: pointer;
+}
+
+.id {
+    position: relative;
+}
+
+.id1 {
+    position: relative;
+    display: inline-block;
+    color:#464853;
+    word-spacing: 5px;
+    left: 140px;
+    top: 451px;
+    font-size: 14px;
+    cursor: pointer;
+}
+ }
+  
